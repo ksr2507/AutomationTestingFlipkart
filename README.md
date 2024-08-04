@@ -1,10 +1,21 @@
-In this Project i have performed Automation testing on Flipkart website. I have performed these tests using TestNG Framework and integrated with Browserstack to perform tests parallely on multiple OS/Browsers 
 
-**File Contents **
+# Flipkart Automation with Selenium and TestNG
 
-src/test/java/FlipkartTestLocal - Contains the code for local run testing just one OS/browser
-src/test/java/FlipkartTestParallel - Contains the code/test for Parallel testing run in 5 OS/browser combinations
-pom.xml - All the dependencies used in this project 
-testng.xml - Contains information on how to run 5 parallel combination along with different inputs to test the FlipkartTestParallel class
-Output - Results Video
+This project automates the search and filtering of products on Flipkart using Selenium WebDriver and TestNG. The script performs the following steps:
+
+* Opens Flipkart.com
+* Searches for "Samsung Galaxy S10"
+* Filters results to show only mobile phones
+* Applies filters for brand (Samsung) and Flipkart Assured
+* Sorts results by price (high to low)
+* Collects and displays product details from page 1
+
+
+### Key Components
+* __src/test/java/Flipkart/FlipkartTestLocal__: Contains the main test class with Selenium WebDriver logic and TestNG annotations for running a automation test on single browser locally.
+* __src/test/java/Flipkart/FlipkartTestParallel__: Contains the main test class with Selenium WebDriver logic and TestNG annotations for running a automation test on 5 OS/Browser combinations parallely using browserstack.
+* __src/test/resources__ : Holds configuration files and WebDriver executables.
+* __testng.xml__ : Configuration file for TestNG test execution.
+
+### Result
 
